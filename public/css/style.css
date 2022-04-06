@@ -19,10 +19,10 @@ li {
 /* HEADER    HEADER    HEADER    HEADER    HEADER    HEADER     */
 
 header{
-    background-color: black;
-    width:  100%;
-    height: auto;
-    display: flex;
+    background-color:      black;
+    width:                    100%;
+    height:                   auto;
+    display:                  flex;
     justify-content: space-between;
 }
 .logo1{
@@ -30,7 +30,7 @@ header{
 }
 .logo1 img {
     height: 50%;
-    width:  80%;
+    width:  95%;
 }
 header ul{
     margin-right:             1rem;
@@ -215,10 +215,18 @@ footer span {
     body {
         font-size: 0.9rem;
     }
+    header{
+        position: absolute;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
+        padding-bottom: 1rem;
+        z-index: 1;
+    }
+    
     header ul {
         flex-direction: column;
     }
     header li {
+        box-shadow: 0 0 .2rem rgba(255, 255, 255, 0.793);
         border: .1rem solid grey;
         margin: .1rem;
         border-radius: .1rem;
@@ -226,12 +234,28 @@ footer span {
     header img {
         display: none;
     }
+    .pack {
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
+        padding-top: 23vh;
+        margin-bottom: 2rem;
+    }
     .pack img {
         display: none;
     }
-
+    .s1{
+        background-color: rgba(80, 69, 69, 0.17);
+        clip-path: polygon(0 7vw, 100% 0, 100% calc(100% - 7vw), 0 100%);
+        margin: 2rem auto;
+        padding: 2rem auto;
+    }
     .sContainBottom p {
         max-width: 80%;
+    }
+    .sContainBottom img {
+        width:  50vw;
+        height: 50vw;
+        margin:    0;
+        padding:   0;
     }
     footer img {
         display: none;
