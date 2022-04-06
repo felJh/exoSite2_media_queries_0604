@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --blue:rgb(76, 93, 122);
+}
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    text-decoration: inherit;
+    color:           inherit;
+}
+li {
+    list-style-type: none;
+}
+
+/* HEADER    HEADER    HEADER    HEADER    HEADER    HEADER     */
+
+header{
+    background-color: black;
+    width:  100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo1{
+    margin: auto 1rem;
+}
+.logo1 img {
+    height: 50%;
+    width:  80%;
+}
+header ul{
+    margin-right:             1rem;
+    display:                  flex;
+    justify-content:  space-evenly;
+    align-items:            center;
+}
+header li {
+    display:                  flex;
+    flex-direction:         column;
+    justify-content: space-between;
+    align-items:            center;
+    color:                 beige;
+    font-size:               0.7em;
+    font-weight:               600;
+    text-align:             center;
+}
+header li img {
+    width: 6vw;
+    margin: 1rem;
+}
+
+/* SECTION PACKAGE (Background: blue)    SECTION PACKAGE (Background: blue) */
+
+.pack {
+    background-color: var(--blue);
+    color:                beige;
+    font-size:                2em;
+    display:                 flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:                 1rem;
+}
+.pack img {
+    width: 12vw;
+}
+.pack div {
+    font-weight:   100 !important;
+}
+.pack p {
+    line-height: 0rem;
+    font-size: .7em;
+}
+
+/* SECTION (background white)  SECTION (background white) */
+
+.sectionH2 {
+    background: var(--blue);
+    color:          beige;
+    padding:           1rem;
+    font-size:          2em;
+    font-weight:        300;
+    text-align:      center;
+    max-width:          30%;
+    margin:     3rem auto 0;
+}
+.sContainBottom {
+    display:                 flex;
+    justify-content: space-around;
+    padding:                 3rem;
+}
+.sContainBottom img {
+    position:     relative;
+    bottom:             -2rem;
+    height:           18vw;
+    width:            18vw;
+}
+.sContainBottom p {
+    max-width:      55%;
+    margin-bottom: 3rem;
+}
+
+/* BANDEAU (background beige)  BANDEAU (background beige) */
+
+.band1{
+    background-color: rgba(255, 243, 208, 0.994);
+    display:                  flex;
+    justify-content:  space-evenly;
+    align-items:            center;
+    flex-wrap:               wrap ;
+    max-width: 100%;
+    margin:   0;
+}
+.bandLogoContain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width:       24%;
+    height:      100%;
+    margin: 1rem auto;
+    
+}
+.band1 img{
+    width: 6.5vw;
+    margin-bottom: 1rem;
+}
+.band1 p{
+    text-align: center;
+    font-size: .9em;
+}
+
+/* FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.71);
+    color: beige;
+}
+.foot-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    
+}
+footer img {
+    width: 4.5vw;
+    padding-right: 1rem;
+}
+footer span {
+    display: inline-block;
+    width:            98%;
+    text-align:     right;
+    padding-bottom:  2rem;
+    font-size:       .8em;
+}
+
+@media screen and (min-width: 2559px) {
+    body {
+        font-size: 1.6rem;
+        margin: auto;
+        width: 60%;
+    }
+    
+}
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 1.1em;
+        margin: auto;
+        width: 80%;
+        box-shadow: 0 0 2rem black;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .logo1{
+        display: none;
+    }
+    header nav {
+        width: 100%;
+    }
+
+    .pack {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .pack img {
+        width: 16vw;
+    }
+    .sectionH2 {
+        font-size: 1.2rem;
+    }
+    .sContainBottom {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align:  center;
+    }
+    .sContainBottom p {
+        max-width: 65%;
+    }
+    .sContainBottom img {
+        position: static;
+        width:  24vw;        
+        height: 24vw;
+    }
+}
+@media screen and (max-width: 424px){
+    body {
+        font-size: 0.9rem;
+    }
+    header ul {
+        flex-direction: column;
+    }
+    header li {
+        border: .1rem solid grey;
+        margin: .1rem;
+        border-radius: .1rem;
+    }
+    header img {
+        display: none;
+    }
+    .pack img {
+        display: none;
+    }
+
+    .sContainBottom p {
+        max-width: 80%;
+    }
+    footer img {
+        display: none;
+    }
+    footer span {
+        text-align: center;
+    }
+}
